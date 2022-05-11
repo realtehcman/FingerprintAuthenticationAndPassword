@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+//https://medium.com/@balvierjha/database-encryption-saving-data-securely-in-android-fbb80795dba1
+//https://www.secureideas.com/blog/2014/10/sqlite-good-bad-embedded-database.html
 public class DatabaseClass extends SQLiteOpenHelper {
 
     Context context;
