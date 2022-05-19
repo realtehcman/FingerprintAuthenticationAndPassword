@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         TextView tv_msg = findViewById(R.id.txt_msg);
         Button login_btn = findViewById(R.id.login_btn);
 
+        //TODO implement button to login with a password
+        Button login_btn_pass = findViewById(R.id.login_btn_pass);
+
+
         BiometricManager biometricManager = BiometricManager.from(this);
         switch (biometricManager.canAuthenticate()) {
             case BiometricManager.BIOMETRIC_SUCCESS:

@@ -50,4 +50,25 @@
         android:text="Login"
         android:textColor="@color/white" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/txt_msg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login with phone password"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/login_btn_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:background="#fafafa"
+        android:text="Login"
+        android:textColor="@color/white" />
+
 </LinearLayout>
