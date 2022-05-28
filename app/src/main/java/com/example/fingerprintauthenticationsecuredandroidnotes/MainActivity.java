@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Button login_btn = findViewById(R.id.login_btn);
 
         //TODO implement button to login with a password
+//        TextView tv_msg2 = findViewById(R.id.);
         Button login_btn_pass = findViewById(R.id.login_btn_pass);
 
 
@@ -85,5 +86,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        BiometricPrompt.PromptInfo promptInfo2 = new BiometricPrompt.PromptInfo.Builder()
+                .setTitle("Login")
+                .setDescription("Use your phone password to login to the app")
+                .setNegativeButtonText("Cancel")
+                .setDeviceCredentialAllowed(Boolean.TRUE)
+                .build();
+
+        login_btn_pass.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    biometricPrompt.authenticate(promptInfo2);
+                }
+        });
     }
 }
